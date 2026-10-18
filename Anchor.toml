@@ -1,0 +1,24 @@
+[toolchain]
+anchor_version = "1.1.2"
+solana_version = "3.1.10"
+
+[features]
+resolution = true
+skip-lint = false
+
+# The default build is the mainnet build (FINAL). `--features devnet` carries the devnet id.
+[programs.localnet]
+juice_lock = "544vBp5c5GHJwNDm4YmS4FK24to9YP17iJLSXmcjFtmG"
+
+[programs.mainnet]
+juice_lock = "544vBp5c5GHJwNDm4YmS4FK24to9YP17iJLSXmcjFtmG"
+
+[programs.devnet]
+juice_lock = "A6uz54MqeiS3VW6GTpKMUswyiTPAzaNpfnRZvANLr9sU"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "./test-lock.sh"

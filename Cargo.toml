@@ -1,0 +1,21 @@
+[workspace]
+members = ["programs/juice-lock", "test-programs/lock-cpi-owner"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.89.0"
+
+# Read by solana-verify to pick the build image (solana-verifiable-build:3.1.10).
+# Without it, solana-verify guesses the version from Cargo.lock and picks a 3.0.x image.
+[workspace.metadata.cli]
+solana = "3.1.10"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1

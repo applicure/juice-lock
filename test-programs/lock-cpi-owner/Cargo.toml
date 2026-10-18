@@ -1,0 +1,32 @@
+[package]
+name = "lock-cpi-owner"
+version = "0.1.0"
+description = "Test-only: a minimal program whose PDA owns a juice_lock lock through CPI (plan 7.1, invariant 11). Never deployed."
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "lock_cpi_owner"
+
+[features]
+default = []
+# CPI into the devnet build of juice_lock (its id comes from juice_lock::ID).
+devnet = ["juice-lock/devnet"]
+# Same program id as the default build; only keeps test-lock.sh's flags uniform.
+mainnet-test = ["juice-lock/mainnet-test"]
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = { version = "=1.1.2" }
+juice-lock = { path = "../../programs/juice-lock", features = ["cpi"] }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }

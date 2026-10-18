@@ -1,0 +1,83 @@
+{
+  "note": "Public mainnet accounts the juice_lock tests run against: the four PumpSwap pools, their LP mints and the Rent sysvar, copied byte for byte (never patched) from juice_boost's recording (programs/juice-boost/tests/fixtures/mainnet.json, scripts/dump-boost-fixtures.mjs) at the same slot. No wallet, no customer account.",
+  "source": "programs/juice-boost/tests/fixtures/mainnet.json",
+  "recordedAtSlot": 454888478,
+  "recordedAt": "2026-10-09T14:07:23.302Z",
+  "pools": {
+    "juicePump": "CAgSY4gnosAgUSemM4k5yczXCzHAE3urdXNCv2Yrvhiu",
+    "trollSol": "4w2cysotX6czaUGmmWg13hDpY4QEMG2CzeKYEQyK9Ama",
+    "usdpUsdc": "46ecnbRetJKGFBkFA3AY3Ea5fuhAxNbmqaojxRopRB8D",
+    "usdcSolUser": "Gf7sXMoP8iRw4iiXmJ1nq4vxcRycbGXy5RL8a8LnTd3v"
+  },
+  "lpMints": {
+    "juicePump": "BmsS1UQe1fNabmRquqBEJPJyUzS3oAxRoiVZ7zFbgx4v",
+    "trollSol": "2g9UTzJBwWvjZYRVcXf3SJ3bRpZEizYk8nn6UNZkZfPs",
+    "usdpUsdc": "ACy5jRW1Sfx3FJB5k6FLKXJ24iGpUyzzdvgHgPujZFRU",
+    "usdcSolUser": "97w26BXNbjXmigPaaRPcRbuPRnnPV49PFyD3oLiwryg4"
+  },
+  "rentSysvar": {
+    "lamportsPerByteYear": "5080",
+    "exemptionThreshold": 1,
+    "burnPercent": 50
+  },
+  "token2022": {
+    "bytes": 1382016,
+    "sha256": "0999dbf708971e723b08d1caafc988826a59c6001ed6dc02260da07defbe1469"
+  },
+  "accounts": [
+    {
+      "key": "CAgSY4gnosAgUSemM4k5yczXCzHAE3urdXNCv2Yrvhiu",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 2179320,
+      "data": "8ZptBBGxbbz/AACuGrdZ6yR8sIjuCYAGcX7goLS8jeWpkWApSGQvkGON1ZUl2vZIWHEwXu4gUlyeA4JiTUR6d9vnS1rgJJeygoAfDEX3342ecpVihJM/bZi3VwMug9+EYE+14Rf/9h1bEvmgE3KUN/kGac4L9w9nQG39ex+/KiGE/c8EbIA0i6dp18qoo6489LUfLJWdf2FyKgDYIf5f18QwDGBQ8LLiUnjB05SwCy55p7M+0inPwP0M96QMwB6kp4PYU4TpMwgjcMsCEa/r0BAAAGw+qjOZ5rSyi+tB7imY0Ijl9fcuQgUPNKCZXD4WHxW6AABI6eOYSgAAAAAAAAAAAAAALAEAAAAAAAAAAD+4jwAAAAAAIF1eQwAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "4w2cysotX6czaUGmmWg13hDpY4QEMG2CzeKYEQyK9Ama",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 217946404,
+      "data": "8ZptBBGxbbz/AADQcvDbc4uWTXGa3TfrHWQrGDaprww3pdd7M8Bp4I/49EJ4RfbE+zkGXuTlfeqeP5K/2sbXWiXoUil+iDKYJ4y9BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEY4utnH0Y+XcSnFrNSpsX5U/HMjqYFsmDHa8Xb1Sp09m6bpbsJj8H7D94+L2uWaKgzBliJy1T2CNzWZJHK8IcfS1hRgogbwsj6wIX1UYIXANThTVZRFUPqYOnK1B2HMFzXd3l4DwQAAApaHGJWsouxuKX9HKZGcf5ipj8sdoKz0Rzn8bWIFOHJAACjqv//////////////////AAAAAAAAAAAAAAAAAAAAAAAAXVUAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "46ecnbRetJKGFBkFA3AY3Ea5fuhAxNbmqaojxRopRB8D",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 2179320,
+      "data": "8ZptBBGxbbz8AADDavrW259/IJa7f8+KuM37ofTPO5hhvaWz/9kJqBWWNwLl09TMqBDHqe9vaKbA4Mlsm8gAHcC6ui4PpnOBwnwfxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWGIyfud2lB6kxg84qkZqwu0ojdGmSfN7NlhlmxGK7F4o0HlD0OOQ3h1ugscavERMNggf7is2PwoXk9iVNGBTt+ikmBoDvUwp2Dttvlqi7vOKxC10QqjxRttxMmlXGnwuTlpeBVUcQEAAHxxxEhWLjay+vX0nXT80ZCTXZKgjTA82H74S/KkijnkAACEK/qVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "Gf7sXMoP8iRw4iiXmJ1nq4vxcRycbGXy5RL8a8LnTd3v",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 3079363,
+      "data": "8ZptBBGxbbz/AACsMMF1T3BihLnos89yp5TKMAay450Pa891k9yYKdvEtMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAF4pA87J9+0qNQ41OUaW7yDdB7NDSCk1OPZ5+dYg1CGIQueH4dredc28RV2l2EKVkjk6f5vSsuYtZuN9QhDo1Fpy/07MUb6tdntkozkw8lXjFE0gjTfbcz3fmZ6u+P9wahB/fWNLQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADlX93/////////////////AAAAAAAAAAAAABugIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "BmsS1UQe1fNabmRquqBEJPJyUzS3oAxRoiVZ7zFbgx4v",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1066800,
+      "data": "AQAAAKXrYPQmO8LSel71ahfCxVVVkxnk2D5cLBsfQPhvCEeWHinI/v8AAAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "2g9UTzJBwWvjZYRVcXf3SJ3bRpZEizYk8nn6UNZkZfPs",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1461600,
+      "data": "AQAAADpqQbFBU/hyDouO8RL+K+gcP7/o4E4woc3wIonV7Q79emr8lQEAAAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "ACy5jRW1Sfx3FJB5k6FLKXJ24iGpUyzzdvgHgPujZFRU",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1066800,
+      "data": "AQAAAC4Ff53xzZ74wAW269Ed4afOC4T+vV41wKM9Jm/Fi1L6AAAAAAAAAAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "97w26BXNbjXmigPaaRPcRbuPRnnPV49PFyD3oLiwryg4",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1461600,
+      "data": "AQAAAOijJNDBXPXqZmpgp69pAf3mfHNbKWdSbQlDNKSygSO5YgVnMy0JAAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "key": "SysvarRent111111111111111111111111111111111",
+      "owner": "Sysvar1111111111111111111111111111111111111",
+      "lamports": 1009200,
+      "data": "2BMAAAAAAAAAAAAAAADwPzI="
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/target/
+# Written by `solana-verify build ... -- --offline` (cargo vendor)
+/vendor/
+/.cargo/
+# Mainnet Token-2022 binary for the tests (scripts/dump-lock-programs.sh)
+programs/*/tests/fixtures/*.so
+# cargo-build-sbf writes throwaway program key pairs to target/deploy/
+*-keypair.json
+.DS_Store
